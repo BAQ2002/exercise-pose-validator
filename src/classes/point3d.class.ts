@@ -50,6 +50,17 @@ export default class Point3d {
     return Math.atan(tang) * (180 / Math.PI);
   }
 
+  public getAngle2(p2?: Point3d, useAbs = true) {
+    let deltaY = !!p2 ? p2.y - this.y : this.y;
+    let deltaX = !!p2 ? p2.x - this.x : this.x;
+    if (useAbs) {
+      deltaY = Math.abs(deltaY);
+      deltaX = Math.abs(deltaX);
+    }
+    const tang = deltaY / deltaX;
+    return Math.atan(tang) * (180 / Math.PI);
+  }
+
   public subtract(p2: Point3d) {
     return new Point3d([this.x - p2.x, this.y - p2.y, this.z - p2.z]);
   }

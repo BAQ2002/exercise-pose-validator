@@ -3,9 +3,11 @@ import PlankDrafter from "./plank-drafter.class";
 import SidePlankDrafter from "./side-plank-drafter.class";
 import Drafter from "./drafter.class";
 import PushUpDrafter from "./push-up-drafter.class";
+import SquatDrafter from "./squat-drafter.class";
 
 export default class DrafterFactory {
   private static draftersDict: Record<Exercise, Constructor<Drafter>> = {
+    squat: SquatDrafter,
     plank: PlankDrafter,
     push_up: PushUpDrafter,
     side_plank: SidePlankDrafter,

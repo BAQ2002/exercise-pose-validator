@@ -119,4 +119,89 @@ export default class Utils {
       coordinatesSystem
     );
   }
+
+  public static getLeftShoulderPoint(
+    landmarks: LandmarkList,
+  ) {
+    const LefShoulderPoint = new Point3d(landmarks[landmarksDict.LEFT_SHOULDER]);
+    return LefShoulderPoint;
+  }
+
+  public static getRightShoulderPoint(
+    landmarks: LandmarkList,
+  ) {
+    const RightShoulderPoint = new Point3d(landmarks[landmarksDict.RIGHT_SHOULDER]);
+    return RightShoulderPoint;
+  }
+
+  public static getLeftWristPoint(
+    landmarks: LandmarkList,
+  ) {
+    const LeftWristPoint = new Point3d(landmarks[landmarksDict.LEFT_WRIST]);
+    return LeftWristPoint;
+  }
+
+  public static getRightWristPoint(
+    landmarks: LandmarkList,
+  ) {
+    const RightWristPoint = new Point3d(landmarks[landmarksDict.RIGHT_WRIST]);
+    return RightWristPoint;
+  }
+
+  public static getLeftHipPoint(
+    landmarks: LandmarkList,
+  ) {
+    const LeftHipPoint = new Point3d(landmarks[landmarksDict.LEFT_HIP]);
+    return LeftHipPoint;
+  }
+
+  public static getRightHipPoint(
+    landmarks: LandmarkList,
+  ) {
+    const RightHipPoint = new Point3d(landmarks[landmarksDict.RIGHT_HIP]);
+    return RightHipPoint;
+  }
+
+  public static getLeftKneePoint(
+    landmarks: LandmarkList,
+  ) {
+    const LeftKneePoint = new Point3d(landmarks[landmarksDict.LEFT_KNEE]);
+    return LeftKneePoint;
+  }
+
+  public static getRightKneePoint(
+    landmarks: LandmarkList,
+  ) {
+    const RightKneePoint = new Point3d(landmarks[landmarksDict.RIGHT_KNEE]);
+    return RightKneePoint;
+  }
+
+  public static getLeftHeelPoint(
+    landmarks: LandmarkList,
+  ) {
+    const LeftHeelPoint = new Point3d(landmarks[landmarksDict.LEFT_HEEL]);
+    return LeftHeelPoint;
+  }
+
+  public static getRightHeelPoint(
+    landmarks: LandmarkList,
+  ) {
+    const RightHeelPoint = new Point3d(landmarks[landmarksDict.RIGHT_HEEL]);
+    return RightHeelPoint;
+  }
+
+  public static getLeftFootPoint(
+    landmarks: LandmarkList,
+  ) {
+    const LeftFootPoint = new Point3d(landmarks[landmarksDict.LEFT_FOOT_INDEX]);
+    return LeftFootPoint;
+  }
+
+  public static getRightFootPoint(
+    landmarks: LandmarkList,
+  ) {
+    const RightFootPoint = new Point3d(landmarks[landmarksDict.RIGHT_FOOT_INDEX]);
+    return RightFootPoint;
+  }
+
 }

@@ -1,5 +1,6 @@
-export type Exercise = "plank" | "push_up" | "side_plank";
+export type Exercise = "squat" | "plank" | "push_up" | "side_plank";
 export const exercisesTranslator: Record<Exercise, string> = {
+  squat: "Agachamento",
   plank: "Prancha",
   push_up: "Flexão",
   side_plank: "Prancha Lateral",
